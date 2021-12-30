@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--color-primary);
+    min-height: 50rem;
+}
+
+.header {
+    height: 13rem;
+    background-color: var(--color-primary-light-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 3rem;
+    background-color: var(--color-primary-light-1);
+}

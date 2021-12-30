@@ -1,0 +1,36 @@
+// LOGO
+
+.logo {
+    height: 5rem;
+    margin: 3rem auto;
+}
+
+// DATE
+
+.date {
+    color: var(--color-primary-light-2);
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    text-align: center;
+}
+
+
+//NEWS NAVIGATION
+
+.news-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    flex: 0 0 60%;
+
+    &__item {
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-primary-light-3);
+        font-size: 1.5rem;
+    }
+}
