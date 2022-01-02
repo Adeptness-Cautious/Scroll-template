@@ -14,12 +14,10 @@
 
             <header class="header">
                 <img src="img/scroll_logo.png" alt="scroll logo" class="logo">
-                <em class="date">Wednesday, December 15th 2021</em>
+                <span class="date">Wednesday, December 15th 2021</span>
             </header>
 
             <nav class="navbar">
-
-
                 <ul class="news-nav">
                     <li class="news-nav__item">
                         <a href="#" class="news-nav__link"> Home </a>
@@ -54,20 +52,109 @@
                     </li>
 
                     <li class="news-nav__item">
-                        <a href="#" class="news-nav__link"> Trending </a>
+                        <a href="#" class="news-nav__link"> 
+                            <span>Trending</span> 
+                            <svg class="news-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
+                        </a>
+                        
                     </li>
 
                     <li class="news-nav__item">
-                        <a href="#" class="news-nav__link"> Sections </a>
+                        <a href="#" class="news-nav__link"> 
+                            <span>Sections</span> 
+                            <svg class="news-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
+                        </a>
+                        
                     </li>
                 </ul>
 
-                <div class="settings-nav">
-                    <div class="settings-nav__item">
-                        //locomotive
+                <ul class="settings-nav">
+                    <li class="settings-nav__link">
+                        <svg class="settings-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="settings-nav__icon-text">Exchange</span>
+                    </li>
+
+                    <li class="settings-nav__link">
+                        <svg class="settings-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                    </li>
+
+                    <li class="settings-nav__link">
+                        <svg class="settings-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </li>
+
+                    <li class="settings-nav__link">
+                        <svg class="settings-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-cog"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="news-stories">
+
+                <div class="main-stories">
+                    <div class="cover-story">
+                        <img src="img/cover-story.png" alt="Cover Story" class="cover-story__image">
+
+                        <div class="story-identifier">
+                            <div class="story-identifier__icon-block">
+                                <svg class="story-identifier__icon-svg">
+                                    <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                                </svg>
+                            </div>                         
+                            <div class="story-identifier__heading">
+                                <span class="story-identifier__heading-1">
+                                    Cover Story
+                                </span>
+                                <span class="story-identifier__heading-2">
+                                    In the spotlight
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="cover-story__details">
+                            <h1 class="cover-story__details-headline">Comfort zone: Murder and mayhem, mon ami</h1> 
+                            <p class="cover-story__details-author">Ipsita Chakravarthy</p>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-headlines">
+                        <div class="latest-headlines__icons">
+                            <div class="story-identifier">
+                                <div class="story-identifier__icon-block">
+                                    <svg class="story-identifier__icon-svg">
+                                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                                    </svg>
+                                </div> 
+                                <div class="story-identifier__heading">
+                                    <span class="story-identifier__heading-1">
+                                        The Latest
+                                    </span>
+                                    <span class="story-identifier__heading-2">
+                                        Top headlines
+                                    </span>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="latest-healines__news">
+
+                        </div>
                     </div>
                 </div>
-            </nav>
+
+            </main>
         </div>
     </body>
 
