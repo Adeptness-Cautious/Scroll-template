@@ -98,7 +98,7 @@
 
 
 .main-stories {
-    margin-top: 2rem;
+    margin:2rem 12.5rem 0 12.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -146,23 +146,78 @@
 
 //LATEST HEADLINES BLOCK
 .latest-headlines{
-    width: 37.5%;
-    height: 40rem;
-
-    background-color: var(--color-primary-light-1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 5px;
+    overflow: hidden;
+
 
     &__icons {
+        height: 16%;
+        background-color: var(--color-primary-dark);
         position: relative;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        flex-grow: 1;
+        
+        &-block{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            cursor: pointer;
+
+            &__pic {
+                width: 8rem;
+                border-radius: 6px;
+                margin:0 2rem;
+            }
+
+            &__text {
+                margin: 0 1rem 0 -1rem;
+                font-size: 1.4rem;
+                font-weight: 300;
+                letter-spacing: 0.6px;
+                color: var(--color-primary-light-4);
+            }
+        }
+
+
     }
 }
 
-//RESUABLE COMPONENT
+//MID PAGE NEWS BLOCK
+.editors-pick {
+    margin:0 12.5rem 0 12.5rem;
+
+    &__icons {
+        height: 6.5rem;
+        position: relative;
+        border-bottom: .1px solid var(--color-border);
+    }
+
+    &__story-identifier {
+        margin-left: -2rem;
+    }
+
+    &__see-all-button {
+        margin-right: -2rem;
+    }
+
+}
+
+//RESUABLE COMPONENTS
 .story-identifier {
     display: flex;
+    
     position: absolute;
     top: 1.5rem;
     left: 2rem;
+
 
     &__icon {
         &-block {
@@ -206,6 +261,23 @@
             color: var(--color-white);
 
         }
+    }
+}
+
+.see-all {
+    border-radius: 7px;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.3rem 1rem;
+
+    background-color: #1F1F1F;
+    opacity: 1;
+
+    .see-all__button {
+        color: var(--color-white);
+        font-size: 1.4rem;
     }
 }
 

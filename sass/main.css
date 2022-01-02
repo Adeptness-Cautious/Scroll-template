@@ -8,9 +8,11 @@ White - #FFFFFF
 */
 :root {
   --color-primary: #000000;
+  --color-primary-dark: #0D0D0D;
   --color-primary-light-1: #121212;
   --color-primary-light-2: #9E9E9E;
   --color-primary-light-3: #C5C5C5;
+  --color-primary-light-4: #C9C9C9;
   --color-border: #171717;
   --color-white: #FFFFFF;
 }
@@ -107,7 +109,7 @@ html {
 }
 
 .main-stories {
-  margin-top: 2rem;
+  margin: 2rem 12.5rem 0 12.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -149,14 +151,63 @@ html {
 }
 
 .latest-headlines {
-  width: 37.5%;
-  height: 40rem;
-  background-color: var(--color-primary-light-1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .latest-headlines__icons {
+  height: 16%;
+  background-color: var(--color-primary-dark);
   position: relative;
+}
+
+.latest-headlines__news {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  flex-grow: 1;
+}
+
+.latest-headlines__news-block {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.latest-headlines__news-block__pic {
+  width: 8rem;
+  border-radius: 6px;
+  margin: 0 2rem;
+}
+
+.latest-headlines__news-block__text {
+  margin: 0 1rem 0 -1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: var(--color-primary-light-4);
+}
+
+.editors-pick {
+  margin: 0 12.5rem 0 12.5rem;
+}
+
+.editors-pick__icons {
+  height: 6.5rem;
+  position: relative;
+  border-bottom: 0.1px solid var(--color-border);
+}
+
+.editors-pick__story-identifier {
+  margin-left: -2rem;
+}
+
+.editors-pick__see-all-button {
+  margin-right: -2rem;
 }
 
 .story-identifier {
@@ -203,6 +254,22 @@ html {
   color: var(--color-white);
 }
 
+.see-all {
+  border-radius: 7px;
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.3rem 1rem;
+  background-color: #1F1F1F;
+  opacity: 1;
+}
+
+.see-all .see-all__button {
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
+
 .container {
   background-color: var(--color-primary);
   min-height: 100rem;
@@ -226,6 +293,13 @@ html {
 }
 
 .news-stories {
-  margin: 0 12.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1px solid var(--color-border);
+}
+
+.latest-headlines {
+  width: 37.5%;
+  height: 40rem;
+  background-color: var(--color-primary-light-1);
 }
 /*# sourceMappingURL=main.css.map */
