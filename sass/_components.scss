@@ -179,7 +179,7 @@
 
             &__text {
                 margin: 0 1rem 0 -1rem;
-                font-size: 1.4rem;
+                font-size: 1.45rem;
                 font-weight: 300;
                 letter-spacing: 0.6px;
                 color: var(--color-primary-light-4);
@@ -206,6 +206,39 @@
 
     &__see-all-button {
         margin-right: -2rem;
+    }
+
+    &__news {
+        height: 30rem;
+        display: flex;
+        
+
+        &-card {
+            background-color: var(--color-cards);
+            border-radius: 7px;
+            margin: 2rem 0;
+            height: 100%;
+            width:20%;
+            overflow: hidden;
+
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+            
+            &-image {
+                height: 50%;
+                width:100%;
+                object-fit: cover;
+            }
+
+            &-text {
+                color:white;
+                margin: 2rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+            }
+        }
     }
 
 }
