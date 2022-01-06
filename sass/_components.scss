@@ -297,16 +297,24 @@
         justify-content: space-between;
 
         &-left {
+            width: 55%;
+            // margin-top: 2rem;
+
             &-block{
-                width: 60%;
                 display: flex;
                 justify-content: space-between;
-                border: 1px solid red;
+                
+                padding: 2rem 0;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--color-border);
+                }
+
             }
 
             &-image {
-                height: 21rem;
-                width: 22rem;
+                height: 20rem;
+                width: 20rem;
                 border-radius: 7px;
                 object-fit: cover;
             }
@@ -314,8 +322,30 @@
             &-text {
                 display: flex;
                 flex-direction: column;
+                margin-left: 2rem;
                 color: var(--color-white);
+
                 &__headline {
+                    font-size: 1.7rem;
+                    font-weight: 300;
+
+                    color: var(--color-headline);
+                }
+
+                &__tagline {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    margin-top: 2rem;
+
+                    color: var(--color-tagline);
+                }
+
+                &__author {
+                    margin-top: 1rem;
+                    font-weight: 300;
+                    font-size: 1.3rem;
+
+                    color: var(--color-author);
                 }
             }
         }
