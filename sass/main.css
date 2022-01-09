@@ -361,6 +361,11 @@ html {
   object-fit: cover;
 }
 
+.all-stories__news-right-image::after {
+  content: "";
+  background: linear-gradient(to bottom, red, green);
+}
+
 .story-identifier {
   display: flex;
   position: absolute;
