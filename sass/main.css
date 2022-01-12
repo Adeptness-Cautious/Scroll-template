@@ -356,6 +356,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  position: relative;
   margin-top: 2rem;
   margin-left: 2rem;
   width: 45%;
@@ -381,11 +382,16 @@ body {
   height: 15rem;
 }
 
-.all-stories__news-right-image {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+.all-stories__news-right-logo {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  top: 2.5rem;
+  left: 2rem;
+  background-color: #FFA20D;
+  padding: 0.5rem 1.3rem;
+  border-radius: 99px;
 }
 
 .all-stories__news-right-headlines {
