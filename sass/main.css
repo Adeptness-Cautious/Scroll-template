@@ -539,4 +539,15 @@ body {
   height: 40rem;
   background-color: var(--color-primary-light-1);
 }
+
+/* 
+0 - 600px: Phone
+600px-900px: Tablet Portrait
+900px-1200px: Tablet Landscape
+[1200 - 1800] is where our normal styles apply
+1800px+ : Big desktop 
+
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
 /*# sourceMappingURL=main.css.map */
